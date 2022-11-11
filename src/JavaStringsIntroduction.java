@@ -14,7 +14,7 @@ public class JavaStringsIntroduction {
         String B=sc.next();
         /* Enter your code here. Print output to STDOUT. */
         System.out.println(A.length()+B.length());
-        Boolean lexicographically = false;
+        boolean lexicographically = false;
         char[] aChars = A.toCharArray();
         char[] bChars = B.toCharArray();
         for (int i = 0; i < A.length(); i++) {
@@ -25,7 +25,8 @@ public class JavaStringsIntroduction {
                 }
             }
         }
-        System.out.println(lexicographically);
-        System.out.println(A + " " + B);
+        System.out.println(lexicographically ? "Yes" : "No");
+        //https://attacomsian.com/blog/capitalize-first-letter-of-string-java
+        System.out.println(A.substring(0,1).toUpperCase()+A.substring(1) + " " + B.substring(0,1).toUpperCase()+B.substring(1));
     }
 }
