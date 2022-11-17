@@ -31,6 +31,19 @@ public class JavaStringCompare {
             start++;
         }
 
+        /*List<String> listOfElements = new ArrayList<>();
+
+        for (int i = 0; i < inputString.length(); i++) {
+            if (i + k <= inputString.length()) {
+                String element = inputString.substring(i, i + k);
+                listOfElements.add(element);
+            }
+        }
+
+        listOfElements = listOfElements.stream().sorted().collect(Collectors.toList());
+
+        return listOfElements.get(0) + "\n" + listOfElements.get(listOfElements.size() - 1);*/
+
         return smallest + "\n" + largest;
     }
 }
