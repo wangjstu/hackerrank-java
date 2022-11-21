@@ -23,7 +23,30 @@ public class JavaAnagrams {
         Arrays.sort(charsa);
         char[] charsb = b.toCharArray();
         Arrays.sort(charsb);
-        return Arrays.toString(charsa).equals(Arrays.toString(charsb));*/
+        return Arrays.toString(charsa).equals(Arrays.toString(charsb));
+        // 简单的写法
+        char[] one = a.toLowerCase().toCharArray();
+        char[] two = b.toLowerCase().toCharArray();
+        Arrays.sort(one);
+        Arrays.sort(two);
+        return Arrays.equals(one,two);
+        */
+
+        // 不需要排序的做法
+        /*if(a.length() != b.length())
+            return false;
+
+        StringBuilder lowA = new StringBuilder(a.toLowerCase());
+        StringBuilder lowB = new StringBuilder(b.toLowerCase());
+        for(int i = 0; i < lowA.length(); i++){
+            for(int j = 0; j < lowB.length(); j++){
+                if(lowA.charAt(i) == lowB.charAt(j)){
+                    lowB.deleteCharAt(j);
+                    break;
+                }
+            }
+        }
+        return lowB.length() == 0;*/
 
         // 冒泡排序+基础数据类型排序操作
         char[] charsa = a.toCharArray();
