@@ -38,6 +38,37 @@ public class JavaStringTokens {
         for (String s : strings) {
             System.out.println(s);
         }
+        /**
+         * // replace+split
+         *         s.trim();
+         *         String variableString = s.replaceAll("[   !,?._'@+]+", " ");
+         *         String[] stringToken = variableString.split(" ");
+         *         System.out.println(stringToken.length);
+         *         if(s.length() <= 0){
+         *             System.out.println(0);
+         *         }else{
+         *             for (String string : stringToken) {
+         *             System.out.println(string.trim());
+         *              }
+         * *         }``
+         */
+        /**
+         * // split
+         *      s = s.trim();
+         *      if(s.length()<=0){
+         *          System.out.println(0);
+         *          return;
+         *
+         *      }else{
+         *           String[] tokens = s.split("[ ?._'@!,]+");
+         *             System.out.println(tokens.length);
+         *                  for(String x : tokens){
+         *                      System.out.println(x);
+         *                     }
+         *         }
+         *
+         * }
+         */
         scanner.close();
     }
 }
