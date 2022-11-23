@@ -69,6 +69,15 @@ public class JavaStringTokens {
          *
          * }
          */
+        /**
+         * //StringTokenizer
+         * //https://www.javatpoint.com/string-tokenizer-in-java
+         *          StringTokenizer str = new StringTokenizer(s, " .,'?!_@");
+         *         System.out.println(str.countTokens());
+         *         while (str.hasMoreTokens()) {
+         *             System.out.println(str.nextToken());
+         *         }
+         */
         scanner.close();
     }
 }
