@@ -27,6 +27,9 @@ public class JavaBigDecimal {
         //第二种方法
         //Arrays.sort(s, 0, n, (o1, o2) -> new BigDecimal(o2).compareTo(new BigDecimal(o1)));
 
+        //object array转为string array
+        //s = Arrays.stream(s).filter(Objects::nonNull).sorted((o1, o2) -> new BigDecimal(o2).compareTo(new BigDecimal(o1))).toArray(String[]::new);
+
         //Output
         for (int i = 0; i < n; i++) {
             System.out.println(s[i]);
