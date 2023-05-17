@@ -15,6 +15,12 @@ import java.util.Arrays;
  * Sample Output
  * 9
  *
+ *  //TIP1:
+ *  list sublist 然后sublist.stream().reduce(0, Integer::sum);
+ *  https://www.baeldung.com/java-stream-sum
+ *
+ *  //TIP2
+ *  可以用arrays.copyOfRance,Arrays.asList(arr).subList(),System.arraycopy 进行分割子数组
  */
 public class JavaSubarray {
     public static void main(String[] args) throws IOException {
